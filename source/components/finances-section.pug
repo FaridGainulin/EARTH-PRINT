@@ -1,0 +1,45 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      .finances-section__block
+        h2.finances-section__title.font-w-b-bold.font-s-70.text-up
+          | Проверенные цифры 
+          span.color-l-blue франшизы
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card-wrapper.swiper-slide
+              .finances-section__card
+                .font-w-b-regular.font-s-42.text-up.color-l-blue 37 дней
+                .font-s-16 понадобится <br> на открытие студии
+            .finances-section__card-wrapper.swiper-slide
+              .finances-section__card
+                .font-w-b-regular.font-s-42.text-up.color-l-blue 1 400 000 рублей
+                .font-s-16 средний размер <br> вложений
+            .finances-section__card-wrapper.swiper-slide
+              .finances-section__card
+                .font-w-b-regular.font-s-42.text-up.color-l-blue 490 000 рублей
+                .font-s-16 средний размер <br> ежемесячной выручки
+            .finances-section__card-wrapper.swiper-slide
+              .finances-section__card
+                .font-w-b-regular.font-s-42.text-up.color-l-blue 1 год
+                .font-s-16 средний срок окупаемости <br> инвестиций
+            .finances-section__card-wrapper.swiper-slide
+              .finances-section__card
+                .font-w-b-regular.font-s-42.text-up.color-l-blue 32,6%
+                .font-s-16 рентабельность <br> по чистой прибыли
+            .finances-section__card-wrapper.swiper-slide
+              .finances-section__card
+                .font-w-b-regular.font-s-42.text-up.color-l-blue 160 000 рублей
+                .font-s-16 средний размер <br> ежемесячной прибыли
+          .bullet-pagination
+      .finances-section__bottom
+        .font-w-semi-bold.font-s-20
+          | Скачайте детальную финансовую модель 
+          span.color-l-blue «EARTH PRINT»
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug

@@ -1,0 +1,71 @@
+.preview-section
+  background-image: url('../images/preview-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #0E0908
+
+  &__container
+    position relative
+    z-index 1
+    padding 0 0 20px
+    +above($breakpoints.sm)
+      padding 0 0 50px
+    +above($breakpoints.md)
+      padding 0 0 80px
+    +above($breakpoints.xxl)
+      padding 0 0 136px
+
+  &__icon
+    position: absolute
+    z-index -1
+    width: 220px;
+    height: auto;
+    bottom: 43px;
+    right: -226px;
+    +above($breakpoints.sm)
+      width: 310px;
+      bottom: 60px;
+      right: -338px;
+    +above($breakpoints.md)
+      width: 480px;
+      bottom: 77px;
+      right: -512px;
+    +above($breakpoints.xxl)
+      width 806px
+      bottom: 94px
+      right: -873px
+
+  &__title
+    text-align: center
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 50px
+    +above($breakpoints.xxl)
+      padding-bottom 70px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    +above($breakpoints.sm)
+      width 174px !important
+    +above($breakpoints.md)
+      width 230px !important
+    +above($breakpoints.xxl)
+      width 280px !important
+
+  &__img
+    width 100%
+    height: auto

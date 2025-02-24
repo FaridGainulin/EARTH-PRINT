@@ -1,0 +1,26 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      img.main-section__bg-img(src="images/main-section-bg-img.png" loading="lazy" width="965" height="392" alt="image")
+      include ../components/header.pug
+      h1.main-section__title.font-w-b-bold.font-s-70.text-up
+        | Откройте свою студию 
+        br.no-br
+        span.color-grey шелкографии 
+        | с проверенной 
+        br.no-br
+        | франшизой   
+        span.font-s-74.color-black-text «EARTH PRINT»
+      .main-section__sub-title.font-w-semi-bold.font-s-20-a
+        | Узнайте как стать партнером студии 
+        br.no-br
+        | и зарабатывать 
+        span.color-l-blue от 160 000 рублей ежемесячно
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Узнать условия открытия
+        .main-section__agree-wrapper
+          include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="891" height="783" alt="image")

@@ -1,0 +1,70 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      h2.about-section__title.font-w-b-bold.font-s-70.text-up
+        span.color-l-blue 3 года 
+        | успешного развития 
+        br
+        span.color-grey на рынке шелкографии
+      .about-section__sub-title.font-w-b-bold.font-s-40 2021
+      .about-section__text
+        .font-s-16
+          | Студия 
+          span.font-w-bold.color-l-blue «EARTH PRINT» 
+          | открылась в 2021 году в Челябинске. Мы 
+          br.no-br
+          | предоставляем заказчикам полный спектр услуг: шелкография, 
+          br.no-br
+          | печать на одежде, печать принтов и бирок для одежды, печать 
+          br.no-br
+          | на пакетах и шопперах, производство и пошив одежды.
+        .font-s-16
+          | То, что начиналось в небольшом помещении 3 года назад, со 
+          br.no-br
+          | временем выросло до крупной компании с профессиональным 
+          br.no-br
+          | оборудованием и широкими возможностями по шелкографии, 
+          br.no-br
+          | печати и пошиву. Сегодня мы делаем даже сложные заказы с 
+          br.no-br
+          | “Пуфф печатью”, можем использовать золото и серебро в 
+          br.no-br
+          | краске и даже печатать принты с оттенками и тенями, чего в 
+          br.no-br
+          | шелкографии добиваются лишь мастера своего дела.
+      .about-section__block
+        .about-section__block-images
+          img.about-section__block-img(src="images/about-section-block-img-1.jpg" loading="lazy" width="280" height="276" alt="image")
+          img.about-section__block-img(src="images/about-section-block-img-2.jpg" loading="lazy" width="280" height="276" alt="image")
+        .about-section__block-text-wrapper
+          .about-section__block-text.font-w-bold
+            .font-s-18
+              | Студия шелкографии — это прибыльный бизнес, 
+              br.no-br
+              | в котором важно разобраться в деталях, чтобы 
+              br.no-br
+              | обойти конкурентов и качественно оказывать 
+              br.no-br
+              | услуги. Все знания и опыт нашей компании будут 
+              br.no-br
+              | доступны новым франчайзи.
+            .font-s-18
+              | Мы проведем вас за руку через все процессы, 
+              br.no-br
+              | обучим тонкостям работы, поделимся 
+              br.no-br
+              | проверенными маркетинговыми инструментами 
+              br.no-br
+              | и секретами масштабирования.
+      .about-section__bottom
+        img.about-section__bottom-img(src="images/about-section-bottom-img.png" loading="lazy" width="209" height="209" alt="image")
+        .font-w-semi-bold.font-s-20 С удовольствием ответим на ваши вопросы!
+        form.about-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Задать вопрос
+        .about-section__agree-wrapper
+          include ../components/agree.pug
+      img.about-section__img(src="images/about-section-img.png" loading="lazy" width="881" height="1208" alt="image")

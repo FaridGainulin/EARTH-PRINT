@@ -1,0 +1,20 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-b-bold.font-s-70.text-up
+        | Станьте партнёром 
+        br
+        | франшизы  
+        span.font-s-74.color-black-text «EARTH PRINT»
+      .city-section__sub-title.font-w-bold.font-s-26
+        | и получайте 
+        span.color-l-blue от 160 000 рублей ежемесячно
+      .font-s-18-a Проверьте, свободен ли ваш город для партнёрства
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Проверить
+        .city-section__agree-wrapper
+          include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1036" height="706" alt="image")
