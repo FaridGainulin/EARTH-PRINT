@@ -18,63 +18,36 @@
     +above($breakpoints.xxl)
       padding 187px 0 125px
 
-  &__title
+  &__mark
     position relative
     z-index 1
+    color: $color-black-text
     &:before
       content: ""
       position: absolute
       z-index -1
       background-color $color-l-blue
-      clip-path: polygon(0 0, 100% 0, 126% calc(100% - 30px), calc(100% - 30px) 160%, 0 100%);
-      width: 110px;
-      height: 24px;
-      top: 19px;
-      left: 141px;
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32%), calc(100% - 8%) 100%, 0 100%);
+      width: 110%;
+      height: 84%
+      top: 0
+      left: -5%;
       +above($breakpoints.sm)
-        clip-path: polygon(0 0, 100% 0, 108% calc(100% - 30px), calc(100% - 30px) 110%, 0 100%);
-        width: 234px;
-        height: 49px;
-        top: 46px;
-        left: 176px;
-      +above($breakpoints.md)
-        clip-path: polygon(0 0, 100% 0, 102% calc(100% - 30px), calc(100% - 30px) 102%, 0 100%);
-        width: 318px;
-        height: 68px;
-        top: 61px;
-        left: 235px;
-      +above($breakpoints.xxl)
-        width: 366px;
-        height: 72px;
-        top: 75px;
-        left: 274px;
+        height: 81%
+        top: 4%;
     &:after
       content: ""
       position: absolute
       z-index -2
       background-color #153EFF
-      clip-path: polygon(0 0, 100% 0, 126% calc(100% - 30px), calc(100% - 30px) 160%, 0 100%);
-      width: 110px;
-      height: 24px;
-      top: 21px;
-      left: 143px;
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32%), calc(100% - 8%) 100%, 0 100%);
+      width: 110%
+      height: 84%;
+      top: 6%
+      left: -3%
       +above($breakpoints.sm)
-        clip-path: polygon(0 0, 100% 0, 108% calc(100% - 30px), calc(100% - 30px) 110%, 0 100%);
-        width: 234px;
-        height: 49px;
-        top: 49px;
-        left: 179px;
-      +above($breakpoints.md)
-        clip-path: polygon(0 0, 100% 0, 102% calc(100% - 30px), calc(100% - 30px) 102%, 0 100%);
-        width: 318px;
-        height: 68px;
-        top: 65px;
-        left: 239px;
-      +above($breakpoints.xxl)
-        width: 366px;
-        height: 72px;
-        top: 79px;
-        left: 278px;
+        height: 81%;
+        top: 10%
 
   &__sub-title
     padding 10px 0 15px
